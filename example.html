@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Article" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
+       
+</head>
+
+<body role="document">
+    <style>
+        #scrolling {
+    max-height: 400px;
+    margin-top: 8px;
+    overflow: scroll;
+    border-left: 1px solid;
+}
+
+.eq-insert-block {
+    position: relative;
+    top: 20px;
+    float: left;
+    background-color: white;
+    cursor: pointer;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.eq-panel .badge {
+    background: none;
+    margin: 3px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.eq-panel .panel-group {
+    padding-right: 15px;
+}
+
+.eq-panel .collapse.in {
+    border-bottom: 1px solid rgb(230, 230, 230);
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+.badge.equation-container {
+    background-color: #F3F3F3;;
+    color: #050505;
+    padding: 15px;
+}
+
+.eq-panel .badge:hover { 
+    background-color: #6c6a71;
+    margin: 3px;
+    color: white;
+}
+
+#run {
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+    </style>
+	<div class="container">
+            <button id="run">edit</button>
+		
+		<div id='texto'>
+			<h1>Equation exaple</h1>	
+			<div data-id="99155" id="equation-99155" contenteditable="false" class="badge equation-container">$\sqrt{|xy|}\leq\left|\frac{x+y}{2}\right|$</div>
+                        <p></p>
+			<div data-id="99155" id="equation-99156" contenteditable="false" class="badge equation-container">$\begin{eqnarray*}e^x & = & \sum_{n=0}^\infty \frac{x^n}{n!}\quad\text{where }n!=\prod_{i=1}^n i\,,  \\\overline{U_\alpha} & = & \bigcap_\alpha U_\alpha\,.\end{eqnarray*}$</div>
+                        <p></p>
+		</div>
+                
+                
+		<p class="text-center"><a href="https://github.com/thisroot/summernote-equation-plugin">Summernote equation plugin</a></p>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.min.js"></script>
+        <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+       
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+        inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+        ]
+        },
+        "HTML-CSS": {
+        linebreaks: { automatic: true }
+        }
+        });
+    </script>
+
+	<script src="summernote-ext-equation.js"></script>
+	<script>
+		$(document).ready(function() {
+                    
+                    $('#run').on('click', function() {
+                    
+			$('#texto').summernote({ 
+                            height: 400, // set editor height,
+                            toolbar: [
+                        ['insert', ['equation', 'draw', 'hello']],
+                        ['para', ['ul', 'ol', 'paragraph']],
+                        ['style', ['style', 'bold', 'italic', 'underline', 'strikethrough', 'clear', 'superscript', 'subscript']],
+                        ['fonts', ['fontsize']],
+                        ['color', ['color']],
+                        ['undo', ['undo', 'redo']],
+                        ['ckMedia', ['ckImageUploader', 'ckVideoEmbeeder']],
+                        ['misc', ['link', 'picture', 'table', 'hr', 'codeview', 'fullscreen']],
+                        ['height', ['lineheight']]
+                    ],});
+                
+                    });
+		});
+	</script>
+        
+</body>
+</html>
