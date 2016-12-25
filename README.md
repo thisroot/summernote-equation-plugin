@@ -1,6 +1,6 @@
 # summernote-equation-plugin
 
-Allows to include equations into the editable content see [example](example.html)
+Allows to include equations into the editable content see [example](example.html) or try it online [summernote-equation-pligin](https://nebesa.me/public/modules/students/summernote-plugin/example.html)
 
 Installation:
 -------------
