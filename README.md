@@ -46,3 +46,5 @@ Installation:
 	</script>
   ```
 4) Remember to include  css and js libraries (jQuery, Bootstrap, Summernote)
+
+P.S: This plug-in works but have some problems. if you want to use it in professional projects, you must improve it. Please write me if you want make stable version.
