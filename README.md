@@ -32,6 +32,7 @@ Installation:
   ```
  3) Initialize summernote with params
  ``` js
+ <link href="dist/main.css" rel="stylesheet">
  <script src="summernote-ext-equation.js"></script>
  <script>
 	$(document).ready(function() {
