@@ -45,7 +45,7 @@ Installation:
 	});
 	</script>
   ```
-4) Remember to include  css and js libraries (jQuery, Bootstrap, Summernote)
-5) Yua can see it [here](https://nebesa.me/public/modules/students/summernote-plugin/example2.html)
+4) Remember to include  css and js libraries (jQuery, Bootstrap, Summernote) <br>
+5) You can see it [here](https://nebesa.me/public/modules/students/summernote-plugin/example2.html)
 
 P.S: This plug-in works but it have some problems. (stable in Mozilla in Crome some functions dose not work, need to rewrite it) If you want to use it in professional projects, you must improve it. Please write me if you want to make stable version.
